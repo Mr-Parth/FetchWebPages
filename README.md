@@ -42,3 +42,6 @@ python fetch.py --metadata https://www.google.com
 ```
 
 ### Check fetch_websites.errors.log for any errors encountered
+
+### Further Improvements
+To use selenium to load dynamic websites and then fetch assets and html of given websites
