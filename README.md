@@ -40,3 +40,5 @@ python fetch.py https://www.google.com
 cd fetch_webpages
 python fetch.py --metadata https://www.google.com
 ```
+
+### Check fetch_websites.errors.log for any errors encountered

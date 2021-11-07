@@ -45,9 +45,12 @@ def fetch_metadata(website):
     file_name = website
     if "https://" in website or "http://" in website:
         file_name = website.split("//")[1]
-    with open(f"{file_name}_metadata.txt") as file:
-        data = file.read()
-        print(data)
+    try:
+        with open(f"{file_name}_metadata.txt") as file:
+            data = file.read()
+            print(data)
+    except Exception as err:
+        print(f"Metadata for website {website} not found. Please fetch website first")
 
 def main():
     parser = argparse.ArgumentParser(description='Fetch websites.')
